@@ -1,4 +1,4 @@
-# midnight-crow
+# Midnight Crow
 
 A fast-paced endless runner inspired by the classic Dino Chrome.
 
