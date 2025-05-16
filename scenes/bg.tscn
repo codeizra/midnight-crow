@@ -1,0 +1,49 @@
+[gd_scene load_steps=5 format=3 uid="uid://c22b1vwjpitqy"]
+
+[ext_resource type="Texture2D" uid="uid://bg07cbgsqe60n" path="res://assets/background/parallax_demon_woods_pack/layers/parallax-demon-woods-bg.png" id="1_5vsr6"]
+[ext_resource type="Texture2D" uid="uid://cllbsgq1e4owk" path="res://assets/background/parallax_demon_woods_pack/layers/parallax-demon-woods-close-trees.png" id="2_w68nc"]
+[ext_resource type="Texture2D" uid="uid://bkke34nqed7tx" path="res://assets/background/parallax_demon_woods_pack/layers/parallax-demon-woods-far-trees.png" id="3_bf1jy"]
+[ext_resource type="Texture2D" uid="uid://bjn1eeeuhixfj" path="res://assets/background/parallax_demon_woods_pack/layers/parallax-demon-woods-mid-trees.png" id="4_r6ch1"]
+
+[node name="Bg" type="ParallaxBackground"]
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+scale = Vector2(2.4, 2.38235)
+texture = ExtResource("1_5vsr6")
+centered = false
+
+[node name="ParallaxLayer" type="ParallaxLayer" parent="."]
+motion_scale = Vector2(0.6, 1)
+motion_mirroring = Vector2(592, 0)
+
+[node name="Sprite2D" type="Sprite2D" parent="ParallaxLayer"]
+scale = Vector2(1.94595, 2.38235)
+texture = ExtResource("2_w68nc")
+centered = false
+
+[node name="ParallaxLayer2" type="ParallaxLayer" parent="."]
+motion_scale = Vector2(0.7, 1)
+motion_mirroring = Vector2(592, 0)
+
+[node name="Sprite2D" type="Sprite2D" parent="ParallaxLayer2"]
+scale = Vector2(1.94595, 2.38235)
+texture = ExtResource("3_bf1jy")
+centered = false
+
+[node name="ParallaxLayer3" type="ParallaxLayer" parent="."]
+motion_scale = Vector2(0.8, 1)
+motion_mirroring = Vector2(592, 0)
+
+[node name="Sprite2D" type="Sprite2D" parent="ParallaxLayer3"]
+scale = Vector2(1.94595, 2.38235)
+texture = ExtResource("4_r6ch1")
+centered = false
+
+[node name="ParallaxLayer4" type="ParallaxLayer" parent="."]
+motion_scale = Vector2(0.9, 1)
+motion_mirroring = Vector2(592, 0)
+
+[node name="Sprite2D" type="Sprite2D" parent="ParallaxLayer4"]
+scale = Vector2(1.94595, 2.38235)
+texture = ExtResource("2_w68nc")
+centered = false

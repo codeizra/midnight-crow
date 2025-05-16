@@ -1,0 +1,69 @@
+[gd_scene load_steps=6 format=3 uid="uid://buxfgn27sbmja"]
+
+[ext_resource type="FontFile" uid="uid://cpwlrpxdgimyb" path="res://fonts/press-start-2p.regular.ttf" id="1_wqhvx"]
+[ext_resource type="FontFile" uid="uid://btvqux4x18020" path="res://fonts/Mantinia Regular/Mantinia Regular.otf" id="2_tbwuq"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_wqhvx"]
+bg_color = Color(0, 0, 0, 0.686275)
+corner_radius_top_left = 15
+corner_radius_bottom_right = 15
+expand_margin_left = 15.0
+expand_margin_top = 15.0
+expand_margin_right = 15.0
+expand_margin_bottom = 15.0
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_racf3"]
+bg_color = Color(0.105882, 0.0980392, 0.129412, 1)
+border_color = Color(0.619608, 0, 0, 1)
+corner_radius_top_left = 15
+corner_radius_bottom_right = 15
+expand_margin_left = 15.0
+expand_margin_top = 15.0
+expand_margin_right = 15.0
+expand_margin_bottom = 15.0
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_7m3ot"]
+bg_color = Color(0, 0, 0, 0.686275)
+shadow_color = Color(0, 0, 0, 0.568627)
+anti_aliasing_size = 0.01
+
+[node name="GameOver" type="CanvasLayer"]
+
+[node name="Button" type="Button" parent="."]
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -120.0
+offset_top = -192.0
+offset_right = 120.0
+offset_bottom = -168.0
+grow_horizontal = 2
+grow_vertical = 0
+size_flags_horizontal = 4
+theme_override_fonts/font = ExtResource("1_wqhvx")
+theme_override_font_sizes/font_size = 24
+theme_override_styles/hover = SubResource("StyleBoxFlat_wqhvx")
+theme_override_styles/normal = SubResource("StyleBoxFlat_racf3")
+text = "PLAY AGAIN"
+
+[node name="Label" type="Label" parent="."]
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -576.0
+offset_top = -66.5
+offset_right = 576.0
+offset_bottom = 66.5
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_colors/font_color = Color(0.619608, 0, 0, 1)
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("2_tbwuq")
+theme_override_font_sizes/font_size = 100
+theme_override_styles/normal = SubResource("StyleBoxFlat_7m3ot")
+text = "GAME OVER"
+horizontal_alignment = 1

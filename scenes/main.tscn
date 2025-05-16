@@ -1,0 +1,33 @@
+[gd_scene load_steps=8 format=3 uid="uid://btiv34lbdsmjm"]
+
+[ext_resource type="Script" uid="uid://ddaw17iag7qar" path="res://scripts/main.gd" id="1_jyhfs"]
+[ext_resource type="PackedScene" uid="uid://c22b1vwjpitqy" path="res://scenes/bg.tscn" id="1_sugp2"]
+[ext_resource type="PackedScene" uid="uid://buautryqg8wgb" path="res://scenes/level.tscn" id="2_jyhfs"]
+[ext_resource type="PackedScene" uid="uid://pqa2t1siml0b" path="res://scenes/dino.tscn" id="3_tbgi4"]
+[ext_resource type="PackedScene" uid="uid://bfajotundh53l" path="res://scenes/hud.tscn" id="5_tbgi4"]
+[ext_resource type="PackedScene" uid="uid://buxfgn27sbmja" path="res://scenes/game_over.tscn" id="6_tefeu"]
+[ext_resource type="AudioStream" uid="uid://d1ds6yqsrfjts" path="res://assets/sounds/Cthonic Cathedral.mp3" id="7_o6xl0"]
+
+[node name="Main" type="Node"]
+script = ExtResource("1_jyhfs")
+
+[node name="Bg" parent="." instance=ExtResource("1_sugp2")]
+
+[node name="Level" parent="." instance=ExtResource("2_jyhfs")]
+
+[node name="Dino" parent="." instance=ExtResource("3_tbgi4")]
+position = Vector2(104, 488)
+
+[node name="Camera2D" type="Camera2D" parent="."]
+position = Vector2(576, 324)
+
+[node name="HUD" parent="." instance=ExtResource("5_tbgi4")]
+
+[node name="GameOver" parent="." instance=ExtResource("6_tefeu")]
+process_mode = 2
+
+[node name="BackgroundMusic" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("7_o6xl0")
+volume_db = 5.0
+autoplay = true
+parameters/looping = false
